@@ -1,0 +1,8 @@
+[
+  {"slot": "A1", "name": "Doritos Nacho Cheese", "price": 1.75, "stock": 8, "tags": ["chips", "salty"]},
+  {"slot": "A2", "name": "Lay's Classic", "price": 1.75, "stock": 6, "tags": ["chips", "salty"]},
+  {"slot": "B1", "name": "Snickers", "price": 1.75, "stock": 5, "tags": ["candy", "chocolate", "sweet"]},
+  {"slot": "B2", "name": "Nature Valley Granola Bar", "price": 1.75, "stock": 7, "tags": ["healthy", "bar"]},
+  {"slot": "C1", "name": "Coca-Cola", "price": 2.00, "stock": 10, "tags": ["drink", "soda"]},
+  {"slot": "C2", "name": "Dasani Water", "price": 1.50, "stock": 12, "tags": ["drink", "water", "healthy"]}
+]
