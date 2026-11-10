@@ -23,7 +23,6 @@ def load_catalog() -> dict[str, dict]:
 
 
 def build_system(catalog: dict[str, dict], cart: dict[str, int]) -> str:
-    # str.replace instead of .format because the prompt contains literal JSON braces
     return (
         SYSTEM_PROMPT
         .replace("{catalog_json}", json.dumps(list(catalog.values()), indent=2))

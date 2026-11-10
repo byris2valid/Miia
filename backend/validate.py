@@ -12,7 +12,8 @@ class ItemRef(BaseModel):
 class MiiaReply(BaseModel):
     action: Literal[
         "add_item", "remove_item", "recommend", "clarify",
-        "checkout", "smalltalk", "cancel",
+        "checkout", "smalltalk", "cancel", "profit", 
+        "best_sellers", "low_stock"
     ]
     items: list[ItemRef] = []
     say: str
@@ -43,3 +44,4 @@ def apply_reply(reply: MiiaReply, cart: dict[str, int], catalog: dict[str, dict]
 
 def cart_total(cart: dict[str, int], catalog: dict[str, dict]) -> float:
     return round(sum(catalog[s]["price"] * q for s, q in cart.items()), 2)
+
